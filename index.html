@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my protfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/91d8dc6c23.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+      <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                
+                <li><a href="#header">Home</a> </li>
+                <li><a href="#about">MUSIC</a> </li>
+                <li><a href="#portfolio">MOVIES</a> </li>
+                <li><a href="#contact">CONTACT</a> </li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+    <h1>
+        <span>
+            Wishing You a Happiest Birthday <br>
+            Lucky to have you! 🎂🪄💖✨
+        </span>
+    </h1>
+</div>
+        
+      </div>  
+    </div>
+    <!--------------about------- -->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpeg" >
+            </div>
+            <div class="about-col-2">
+                
+                
+                <div class="tab-titles">
+                   
+                   <h1 class="sub-title">Sanghita's Favourite Music🎵🎶✨</h1>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                   <ul>
+    <li>
+        <iframe style="border-radius:12px" 
+        src="https://open.spotify.com/embed/track/2mEppTHVdyx190GXJXiNLM" 
+        width="300" height="50" frameborder="0" 
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+        </iframe>
+    </li>
+
+    <li>
+        <iframe style="border-radius:12px" 
+        src="https://open.spotify.com/embed/track/1DvNJnlECKFetgrmGLt467" 
+        width="300" height="50">
+        </iframe>
+    </li>
+
+    <li>
+        <iframe style="border-radius:12px" 
+        src="https://open.spotify.com/embed/track/5mlCYroWUlR0KdGfE0ZoOn" 
+        width="300" height="50">
+        </iframe>
+    </li>
+
+    <li>
+        <iframe style="border-radius:12px" 
+        src="https://open.spotify.com/embed/track/7ttlemwytO21npSmLKqTBg" 
+        width="300" height="50">
+        </iframe>
+    </li>
+
+    <li>
+        <iframe style="border-radius:12px" 
+        src="https://open.spotify.com/embed/track/0EjbrQB6SBVESBVYvqNpKY" 
+        width="300" height="50">
+        </iframe>
+    </li>
+</ul>
+                </div>
+               
+                        
+                    </ul>
+                </div>
+
+                <!-- FIXED SECTION -->
+                <div class="tab-titles" id="expriences">
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------services-------------------- -->
+
+<!-- --------------portfolio----------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Sanghita's Favourite Movies 🎞️🎬🍿✨</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="D:\New folder (2)\images\Parineeta.jpg" alt="">
+                <div class="layer">
+                   <b><h1>পরিণীতা</h1></b> 
+                    <a href="https://share.google/y9dqk13yHFVLBjDxp"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="D:\New folder (2)\images\images.jpg" alt="">
+                <div class="layer">
+                    <h1>শুধু তোমার জন্য</h1>
+                    
+                    <a href="https://www.imdb.com/title/tt5141042/?ref_=ext_shr_lnk"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="D:\New folder (2)\images\parbona.jpg" alt="">
+                <div class="layer">
+                    <h1>পারবোনা আমি ছাড়তে তোকে</h1>
+                    <p>the app connects you to the talented people
+                        download it from play store.
+                    </p>
+                    <a href="https://www.imdb.com/title/tt4944932/?ref_=ext_shr_lnk"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="D:\New folder (2)\images\tare.jpg" alt="">
+                <div class="layer">
+                    <h1>Like Stars on Earth</h1>
+            
+                    <a href="https://www.imdb.com/title/tt0986264/?ref_=ext_shr_lnk"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<!-- --------------contact----------------- -->
+<div class="contact-left">
+    <h1 class="sub-title">Contact me</h1> 
+
+    <div class="contact-info">
+        <span><i class="fa-solid fa-paper-plane"></i> sanghitachatterjee@gmail.com</span>
+        <span><i class="fa-solid fa-phone"></i> 9907432534</span>
+    </div>
+
+    <div class="social-icons">
+        <a href="https://www.instagram.com/its__mistu2007">
+            <i class="fa-brands fa-instagram"></i> Instagram
+        </a>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+var sidemenu = document.getElementById("sidemenu");
+
+function openmenu(){
+    sidemenu.style.right="0";
+}
+
+function closemenu(){
+    sidemenu.style.right="-200px";
+}
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyheA3YbuGUnvyl7Yj7R8A272UlLqXIvvAWHulDA_37ktbra3ldZCvJfzDxjCIjhBkBQg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
